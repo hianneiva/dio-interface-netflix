@@ -1,5 +1,5 @@
 /**
- * Stylesheet for Netflix Demo
+ * Stylesheet for Netflix Demo.
  */
 
 /* Variables */
@@ -104,4 +104,8 @@ header .logo {
   height: 100%;
   width: 100%;
   display: block;
+}
+
+.carousel-shows {
+  margin-top: 8px;
 }
