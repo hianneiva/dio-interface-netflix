@@ -1,0 +1,107 @@
+/**
+ * Stylesheet for Netflix Demo
+ */
+
+/* Variables */
+:root {
+  --netflixRed: #e50914;
+  --netflixBlk: #141414;
+}
+
+/* CSS reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base content */
+body {
+  background: var(--netflixBlk);
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #aaa;
+  margin: 0 5px;
+}
+
+header nav a:hover {
+  color: white;
+}
+
+header .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  color: var(--netflixRed);
+  font-family: "Arial Black", Helvetica, sans-serif;
+  font-size: 40px;
+  margin: 0 5px;
+}
+
+/* Show content */
+.main-show {
+  font-size: 16px;
+  background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.75),
+      rgba(0, 0, 0, 0.25) 100%
+    ),
+    url("../res/main.jpg");
+  background-size: cover;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.main-show .container {
+  margin: 0 16px;
+  width: 70%;
+}
+
+.main-show .summary {
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.main-show .title {
+  margin-top: 15%;
+  font-size: 48px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.main-show-btn {
+  background-color: rgba(0, 0, 0, 0.75);
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  margin: 0 7.5px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.main-show-btn:hover {
+  background-color: white;
+  color: black;
+  transition: 0.3s ease all;
+}
+
+.main-show-btn i {
+  margin-right: 4px;
+}
+
+.box-show {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
